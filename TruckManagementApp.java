@@ -22,13 +22,13 @@ public class TruckManagementApp {
             projectMethods.createShelfType(projectDatabase, type4);
             projectMethods.createShelfType(projectDatabase, type5);
 
-            Worker w1 = new Worker("Suresh Gupta", "9111111111", "suresh@warehouse.com", "pass123");
-            Worker w2 = new Worker("Meena Kumari", "9111111112", "meena@warehouse.com", "pass123");
-            Worker w3 = new Worker("Amit Patel", "9111111113", "amit@warehouse.com", "pass123");
-            Worker w4 = new Worker("Sunita Rao", "9111111114", "sunita@warehouse.com", "pass123");
-            Worker w5 = new Worker("Vikram Singh", "9111111115", "vikram@warehouse.com", "pass123");
-            Worker w6 = new Worker("Anjali Desai", "9111111116", "anjali@warehouse.com", "pass123");
-            Worker w7 = new Worker("Priya Sharma", "9111111117", "priya@warehouse.com", "pass123");
+            Worker w1 = new Worker("Suresh Gupta", "9111111111", "suresh@warehouse.com", "SureshG123");
+            Worker w2 = new Worker("Meena Kumari", "9111111112", "meena@warehouse.com", "MeenaK123");
+            Worker w3 = new Worker("Amit Patel", "9111111113", "amit@warehouse.com", "AmitP123");
+            Worker w4 = new Worker("Sunita Rao", "9111111114", "sunita@warehouse.com", "SunitaR123");
+            Worker w5 = new Worker("Vikram Singh", "9111111115", "vikram@warehouse.com", "VikramS123");
+            Worker w6 = new Worker("Anjali Desai", "9111111116", "anjali@warehouse.com", "AnjaliD123");
+            Worker w7 = new Worker("Priya Sharma", "9111111117", "priya@warehouse.com", "PriyaS123");
 
             projectDatabase.workerList.add(w1);
             projectDatabase.workerList.add(w2);
@@ -38,21 +38,21 @@ public class TruckManagementApp {
             projectDatabase.workerList.add(w6);
             projectDatabase.workerList.add(w7);
 
-            projectDatabase.userPasswords.put("admin@warehouse.com", "admin123");
+             projectDatabase.userPasswords.put("admin@warehouse.com", "admin123");
             projectDatabase.userTypes.put("admin@warehouse.com", "admin");
-            projectDatabase.userPasswords.put(w1.getWorkerEmail(), "pass123");
+            projectDatabase.userPasswords.put(w1.getWorkerEmail(), "SureshG123");
             projectDatabase.userTypes.put(w1.getWorkerEmail(), "worker");
-            projectDatabase.userPasswords.put(w2.getWorkerEmail(), "pass123");
+            projectDatabase.userPasswords.put(w2.getWorkerEmail(), "MeenaK123");
             projectDatabase.userTypes.put(w2.getWorkerEmail(), "worker");
-            projectDatabase.userPasswords.put(w3.getWorkerEmail(), "pass123");
+            projectDatabase.userPasswords.put(w3.getWorkerEmail(), "AmitP123");
             projectDatabase.userTypes.put(w3.getWorkerEmail(), "worker");
-            projectDatabase.userPasswords.put(w4.getWorkerEmail(), "pass123");
+            projectDatabase.userPasswords.put(w4.getWorkerEmail(), "SunitaR123");
             projectDatabase.userTypes.put(w4.getWorkerEmail(), "worker");
-            projectDatabase.userPasswords.put(w5.getWorkerEmail(), "pass123");
+            projectDatabase.userPasswords.put(w5.getWorkerEmail(), "VikramS123");
             projectDatabase.userTypes.put(w5.getWorkerEmail(), "worker");
-            projectDatabase.userPasswords.put(w6.getWorkerEmail(), "pass123");
+            projectDatabase.userPasswords.put(w6.getWorkerEmail(), "AnjaliD123");
             projectDatabase.userTypes.put(w6.getWorkerEmail(), "worker");
-            projectDatabase.userPasswords.put(w7.getWorkerEmail(), "pass123");
+            projectDatabase.userPasswords.put(w7.getWorkerEmail(), "PriyaS123");
             projectDatabase.userTypes.put(w7.getWorkerEmail(), "worker");
 
             Driver d1 = new Driver("Rajesh Kumar", "9876543210");
@@ -78,18 +78,17 @@ public class TruckManagementApp {
 
             TypeTruck x1 = new TypeTruck("incoming");
             TypeTruck x2 = new TypeTruck("outgoing");
-
-            Truck t1 = new Truck("IN-001", "Tata 407");
-            Truck t2 = new Truck("IN-002", "Mahindra Pickup");
-            Truck t3 = new Truck("IN-003", "Ashok Leyland");
-            Truck t4 = new Truck("IN-004", "Eicher Pro");
-            Truck t5 = new Truck("IN-005", "BharatBenz");
-
-            Truck t6 = new Truck("OUT-001", "Tata Ace");
-            Truck t7 = new Truck("OUT-002", "Maruti Super Carry");
-            Truck t8 = new Truck("OUT-003", "Force Urbania");
-            Truck t9 = new Truck("OUT-004", "Isuzu D-Max");
-            Truck t10 = new Truck("OUT-005", "Volvo FH");
+            Truck t1 = new Truck("MH01AB1234", "Tata 407");
+            Truck t2 = new Truck("MH02CD5678", "Mahindra Pickup");
+            Truck t3 = new Truck("MH03EF9012", "Ashok Leyland");
+            Truck t4 = new Truck("MH04GH3456", "Eicher Pro");
+            Truck t5 = new Truck("MH05IJ7890", "BharatBenz");
+            
+            Truck t6 = new Truck("MH06KL1234", "Tata Ace");
+            Truck t7 = new Truck("MH07MN5678", "Maruti Super Carry");
+            Truck t8 = new Truck("MH08OP9012", "Force Urbania");
+            Truck t9 = new Truck("MH09QR3456", "Isuzu D-Max");
+            Truck t10 = new Truck("MH10ST7890", "Volvo FH");
 
             projectDatabase.truckList.add(t1);
             projectDatabase.truckList.add(t2);
@@ -283,4 +282,5 @@ public class TruckManagementApp {
         MenuWorker menuWorkerClass = new MenuWorker();
         menuWorkerClass.showWorkerMenu(frame, projectDatabase, projectMethods);
     }
+
 }
